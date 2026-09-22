@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>LockIn Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for the LockIn Android app.">
+  <style>
+    :root {
+      color-scheme: light dark;
+      --bg: #ffffff;
+      --text: #1b1f23;
+      --muted: #5f6368;
+      --card: #f7f8fa;
+      --border: #e3e6ea;
+      --link: #146c5a;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101214;
+        --text: #f1f3f4;
+        --muted: #aeb4ba;
+        --card: #171a1d;
+        --border: #2a2f34;
+        --link: #7bd6bf;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font: 16px/1.65 system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    main {
+      max-width: 820px;
+      margin: 0 auto;
+      padding: 48px 22px 72px;
+    }
+    header {
+      margin-bottom: 32px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid var(--border);
+    }
+    h1 { font-size: 2.2rem; line-height: 1.2; margin: 0 0 8px; }
+    h2 { margin-top: 34px; font-size: 1.35rem; }
+    p { margin: 12px 0; }
+    .meta { color: var(--muted); }
+    .summary {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 18px 20px;
+      margin: 24px 0 8px;
+    }
+    a { color: var(--link); }
+  </style>
+</head>
+<body>
+<main>
+  <header>
+    <h1>LockIn Privacy Policy</h1>
+    <p class="meta">Effective date: September 20, 2026</p>
+  </header>
+
+  <div class="summary">
+    <strong>Summary:</strong> LockIn is designed to work locally on your Android device. LockIn does not require an account, does not contain advertising or analytics SDKs, and does not transmit your LockIn app data to a developer-operated server or cloud service.
+  </div>
+
+  <h2>1. About LockIn</h2>
+  <p>LockIn is a focus and app-blocking application for Android. It lets you select distracting apps, start and end focus sessions using a trusted NFC card, configure focus schedules, use Strict Mode, view local focus statistics, and use an authenticated Emergency Unlock flow.</p>
+  <p>This Privacy Policy explains what information LockIn accesses, how that information is used, where it is stored, and the choices available to you.</p>
+
+  <h2>2. Data LockIn accesses and stores</h2>
+  <p><strong>Selected applications.</strong> When you choose apps to block, LockIn stores the Android package names of those selected apps locally on your device so it can enforce your choices.</p>
+  <p><strong>Accessibility service information.</strong> LockIn uses Android's AccessibilityService API to detect when an app becomes active so that selected apps can be blocked during an active focus session. LockIn's accessibility service is configured not to retrieve window content. LockIn does not use the service to read message contents, passwords, typed text, screen text, contacts, or other content displayed inside apps. The service uses package identity, relevant accessibility event type, and timing needed for the blocking feature.</p>
+  <p><strong>Focus-session and statistics data.</strong> LockIn stores focus-session information locally, including session timing, whether Strict Mode was active, blocked-attempt counts, and the reason a session ended. This data is used to show your focus history and statistics inside the app.</p>
+  <p><strong>Schedules and settings.</strong> LockIn stores settings such as schedules, theme preferences, Strict Mode preference, selected blocked apps, and current session state locally on your device.</p>
+  <p><strong>Trusted NFC card data.</strong> During NFC card pairing, LockIn creates a random credential and writes the full credential to the trusted NFC card. On the phone, LockIn stores cryptographic hashes used to verify the trusted card, rather than the plaintext card credential or the raw NFC hardware identifier. A short card fingerprint may be shown in the app for identification; it is not used as the sole authentication credential.</p>
+  <p><strong>Authentication state.</strong> Emergency Unlock uses Android's system biometric or device-credential authentication interface. LockIn does not receive or store your fingerprint, face data, PIN, password, or other biometric template.</p>
+
+  <h2>3. How LockIn uses this information</h2>
+  <p>LockIn uses the information described above only to provide app functionality on your device, including enforcing selected-app blocking, authenticating trusted NFC card actions, restoring session state, applying schedules, operating Strict Mode and Emergency Unlock, and displaying local focus statistics.</p>
+
+  <h2>4. Data transmission, sharing, advertising, and analytics</h2>
+  <p>LockIn does not require a LockIn account and does not operate a developer backend for your app data. LockIn does not include advertising SDKs or analytics SDKs, and the app does not request the Android INTERNET permission. LockIn does not sell your personal information and does not transmit your LockIn focus data, selected-app data, NFC trust data, or statistics to the developer or to third parties.</p>
+  <p>Google Play and the Android operating system may independently process information related to downloading, installing, updating, security-checking, or operating apps under Google's and your device manufacturer's own privacy practices. That processing is outside LockIn's direct control.</p>
+
+  <h2>5. AccessibilityService API disclosure</h2>
+  <p>LockIn uses the AccessibilityService API for the narrow purpose of detecting which application is active and enforcing the blocking behavior you configure. The service is not represented as an accessibility tool for people with disabilities. LockIn does not use AccessibilityService to retrieve window contents or to capture screen text, passwords, messages, or form contents. Accessibility access is enabled by you in Android system settings and can be disabled there at any time.</p>
+
+  <h2>6. Data storage and security</h2>
+  <p>LockIn stores its operational data in Android app-private storage on your device. Trusted-card verification uses cryptographic hashing, and the plaintext trusted-card credential is not stored in the phone's trusted-card record. LockIn also disables normal Android cloud backup/device-transfer behavior for its app-private data as part of its security design. No security measure can guarantee absolute protection, and the security of locally stored data also depends on the security of your Android device.</p>
+
+  <h2>7. Data retention and deletion</h2>
+  <p>LockIn retains local settings, focus history, and trusted-card verification information for as long as they remain stored in the app on your device. Removing a trusted card from LockIn removes that card's trusted record from the app. You can remove all LockIn app data by using Android's system “Clear storage” / “Clear data” option for LockIn or by uninstalling the app. Because LockIn does not maintain a user account or developer-operated cloud database for this data, there is no separate server-side account or cloud profile to delete.</p>
+
+  <h2>8. Children's privacy</h2>
+  <p>LockIn is not specifically designed for children, and the developer does not knowingly collect personal information from children through a developer-operated server or account system.</p>
+
+  <h2>9. Changes to this Privacy Policy</h2>
+  <p>This Privacy Policy may be updated when LockIn's features or data practices change. The effective date at the top of this page will be updated when the policy changes. Material changes to how LockIn accesses, uses, or shares data will be reflected in the app's disclosures and Google Play declarations as required.</p>
+
+  <h2>10. Contact</h2>
+  <p>For privacy questions about LockIn, contact the developer at <a href="mailto:vivekreddysama@gmail.com">vivekreddysama@gmail.com</a>.</p>
+</main>
+</body>
+</html>
